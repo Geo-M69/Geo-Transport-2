@@ -1,0 +1,6 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+geotransportautoexportinc.durable.co	TRUE	/	FALSE	1999999999	pt	NjRjMTdmOGQ4ODdjN2E0MGYyZDk2ODZjOjE2OTA0MDI4NjMuNjM6cHJldmlldw%3D%3D
+geotransportautoexportinc.durable.co	TRUE	/	FALSE	1999999999	__cflb	0H28vfvcuuPJ96G9nKwFWjTsZeeA3SiPvywxHYk9dvc
+geotransportautoexportinc.durable.co	TRUE	/	FALSE	1999999999	SameSite	None
+
