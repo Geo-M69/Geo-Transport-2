@@ -2364,7 +2364,7 @@ New Castle, DE, USA</pre
     </script>
     <script>
       const scrollButton = document.querySelector('button primary xl mt-6 lg:mt-8 w-full md:w-max');
-      const targetSection = document.getElementById('contact-7');
+      const targetSection = document.querySelector('flex flex-none flex-shrink-0 relative z-10 items-center');
       scrollButton.addEventListener('click', () => {
         // Use smooth scrolling behavior to scroll to the target section
         targetSection.scrollIntoView({ behavior: 'smooth' });
