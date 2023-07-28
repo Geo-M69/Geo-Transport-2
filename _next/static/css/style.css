@@ -1,0 +1,21 @@
+body {
+    min-height: 100vh;
+}
+
+.fixed-button {
+    position: fixed;
+    bottom: 20px; /* Adjust this value to control the vertical position */
+    right: 20px; /* Adjust this value to control the horizontal position */
+    z-index: 9999; /* Make sure the button appears above other content */
+}
+
+.scrollToTopButton {
+    padding: 10px 20px;
+    background-color: #007bff; /* Replace with your desired button color */
+    color: #fff; /* Replace with your desired button text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+  
+  
