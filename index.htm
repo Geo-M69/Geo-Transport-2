@@ -212,7 +212,7 @@
             height: 140px;
             display: flex;
             align-items: center;
-            justify-content: center; /* Center the content horizontally */
+            /* justify-content: center; */ /* Center the content horizontally */
             width: 100%; /* Set the width to 100% to occupy the full width of the container */
           "
         >
@@ -220,8 +220,7 @@
             class="grid items-center lg:gap-6 xl:gap-10 mx-auto pt-6 pb-6 container"
             style="
               display: flex;
-              width: 100%; /* Match the width of the header */
-              height: 100%; /* Match the height of the header */
+              flex: 1; /* Make the inner div occupy all available space */
               gap: 0;
               padding: 0;
               outline: none;
