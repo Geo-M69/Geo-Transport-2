@@ -472,7 +472,7 @@ select {
     max-width: 768px;
   }
   .heading-small {
-    max-width: 30% !important;
+    max-width: 12% !important;
   }
   .grid {
     height: 70%;
