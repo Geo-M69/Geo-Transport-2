@@ -1905,7 +1905,7 @@
         <section
           id="location-6"
           class="relative flex z-10"
-          style="background-color: #333333; min-height: "
+          style="background-color: #333333; min-height: auto"
         >
           <div
             class="container mx-auto flex-grow relative z-10 pt-12 lg:pt-14 xl:pt-20 pb-12 lg:pb-14 xl:pb-20"
@@ -2606,14 +2606,45 @@
       }
     </script>
     <script>
-      // Get a reference to the button element
-      const button = document.getElementById("scrollToTopButton");
+      // Function to handle smooth scrolling
+      function smoothScroll(target) {
+        const targetSection = document.querySelector(target);
+        if (!targetSection) return; // Return if the target section doesn't exist
 
-      // Add a click event listener to scroll to the top of the page when clicked
-      button.addEventListener("click", () => {
-        window.scrollTo({
-          top: 0,
-          behavior: "smooth",
+        const targetPosition = targetSection.offsetTop;
+        const startPosition = window.pageYOffset;
+        const distance = targetPosition - startPosition;
+        const duration = 800; // Adjust the duration (in milliseconds) as needed
+
+        let start = null;
+
+        function animationStep(timestamp) {
+          if (!start) start = timestamp;
+          const progress = timestamp - start;
+          window.scrollTo(0, easeInOutCubic(progress, startPosition, distance, duration));
+          if (progress < duration) {
+            requestAnimationFrame(animationStep);
+          }
+        }
+
+        // Easing function for smooth scrolling
+        function easeInOutCubic(t, b, c, d) {
+          t /= d / 2;
+          if (t < 1) return (c / 2) * t * t * t + b;
+          t -= 2;
+          return (c / 2) * (t * t * t + 2) + b;
+        }
+
+        // Start the animation
+        requestAnimationFrame(animationStep);
+      }
+
+      // Add click event listeners to all elements with class 'scroll-trigger'
+      const scrollTriggers = document.querySelectorAll('.scroll-trigger');
+      scrollTriggers.forEach((trigger) => {
+        trigger.addEventListener('click', () => {
+          const target = trigger.dataset.target;
+          smoothScroll(target);
         });
       });
     </script>
