@@ -203,93 +203,71 @@
         class="min-h-full w-full flex flex-col smooth-scroll"
         style="font-family: 'Lato', sans-serif; font-weight: 400"
       >
-        <header
-          id="website-header"
-          class="!z-[2000] sticky top-0 transition-colors shadow"
-          style="
-            color: #000000;
-            height: 140px;
-            display: flex;
-            align-items: center;
-            /* justify-content: center; */ /* Center the content horizontally */
-            width: 100%; /* Set the width to 100% to occupy the full width of the container */
-            background-color: #d62828;
-          "
-        >
-          <div
-            class="grid items-center lg:gap-6 xl:gap-10 mx-auto pt-6 pb-6 container"
-            style="
-              display: flex;
-              flex: 1; /* Make the inner div occupy all available space */
-              gap: 0;
-              padding-left: 1rem;
-              outline: none;
-              margin: 0;
-            "
-          >
-            <div
-              class="col-span-2 lg:col-span-1 truncate"
-              style="display: flex; align-items: center; width: 90%"
-            >
-              <a
-                class="max-w-full overflow-hidden grid"
-                target="_self"
-                href="https://www.geotransport.net/"
-              >
-                <img
-                  class="heading-small lg:heading-medium overflow-hidden whitespace-nowrap overflow-ellipsis"
-                  src="https://i.imgur.com/rMBpUpb.png"
-                  style="max-width: 16% !important; max-height: 150% !important"
-                />
-              </a>
-            </div>
-            <h3
-              style="
-                font-size: 1.2rem;
-                width: 6%;
-                color: white;
-                font-weight: 500;
-                display: none;
-              "
-            >
-              Call Us
-            </h3>
-            <button
-              class="call-number"
-              style="
-                background-color: #0f1a20;
-                color: white;
-                height: 45px;
-                /* padding: 0 20px; */ /* Add some padding to the button for better appearance */
-                font-size: 1rem;
-                width: 9rem;
-                margin-left: 1rem;
-                display: none;
-              "
-            >
-              302-322-9001
-            </button>
-            <img
-              src="./images/LOGOAS.ico"
-              alt=""
-              srcset=""
-              style="
-                max-width: 100%;
-                max-height: 100%;
-                width: 15%;
-                margin-left: 3rem;
-              "
-            />
-            <div
-              class="hidden lg:flex item-center justify-end gap-10 lg:col-span-2"
-            >
-              <ul
-                class="lg:flex items-center gap-x-4 gap-y-2 flex-wrap justify-end hidden"
-              ></ul>
-            </div>
-            <div class="ml-auto lg:hidden"></div>
-          </div>
-        </header>
+      <header id="website-header" class="!z-[2000] sticky top-0 transition-colors shadow" style="
+      color: #000000;
+      height: 220px;
+      display: flex;
+      flex-direction: column;
+      /* align-items: center; */
+      /* justify-content: center; */ /* Center the content horizontally */
+      width: 100%; /* Set the width to 100% to occupy the full width of the container */
+      background-color: #d62828;
+    ">
+    <div class="grid items-center lg:gap-6 xl:gap-10 mx-auto pt-6 pb-6 container" style="
+        display: flex;
+        flex: 1; /* Make the inner div occupy all available space */
+        gap: 0;
+        padding-left: 1rem;
+        outline: none;
+        margin: 0;
+        height: 70%;
+      ">
+      <div class="col-span-2 lg:col-span-1 truncate" style="display: flex; align-items: center; width: 90%">
+        <a class="max-w-full overflow-hidden grid" target="_self" href="https://www.geotransport.net/">
+          <img class="heading-small lg:heading-medium overflow-hidden whitespace-nowrap overflow-ellipsis" src="https://i.imgur.com/rMBpUpb.png" style="max-width: 16% !important; max-height: 210% !important">
+        </a>
+      </div>
+      <h3 style="
+          font-size: 1.2rem;
+          width: 6%;
+          color: white;
+          font-weight: 500;
+          display: none;
+        ">
+        Call Us
+      </h3>
+      <button class="call-number" style="
+          background-color: #0f1a20;
+          color: white;
+          height: 45px;
+          /* padding: 0 20px; */ /* Add some padding to the button for better appearance */
+          font-size: 1rem;
+          width: 9rem;
+          margin-left: 1rem;
+          display: none;
+        ">
+        302-322-9001
+      </button>
+      <img src="./images/LOGOAS.ico" alt="" srcset="" style="
+          max-width: 100%;
+          max-height: 100%;
+          width: 20%;
+          margin-left: 3rem;
+        ">
+      <div class="hidden lg:flex item-center justify-end gap-10 lg:col-span-2">
+        <ul class="lg:flex items-center gap-x-4 gap-y-2 flex-wrap justify-end hidden"></ul>
+      </div>
+      <div class="ml-auto lg:hidden"></div>
+    </div>
+<div class="second-taskbar" style="background-color: #201B22;width: 100%;height: 30%;" ;="" height:="" 20%;="">
+    <div class="span-container" style="width: 20%;height: 100%;display: flex;align-items: center;background-color: #201B22;column-gap: 1.5rem;">
+    <span class="taskbar-buttons" style="color: white;margin-left: 1rem;">Home</span>
+    <span class="taskbar-buttons" style="color: white;cursor: pointer;" onclick="smoothScroll('#banner-0')">About</span>
+    <span class="taskbar-buttons" style="color: white;cursor: pointer;" onclick="smoothScroll('#list-3')">Services</span>
+    <span class="taskbar-buttons" style="color: white;cursor: pointer;" onclick="smoothScroll('#contact-7')">Contact</span>
+</div>
+</div>
+  </header>
         <section
           id="banner-0"
           data-text-color="#FFFFFF"
@@ -552,10 +530,10 @@
                       font-weight: 400;
                     "
                   >
-                    Transporte terrestre
+                    Transporte Terrestre
                   </p>
                   <div class="rich-text-block" style="color: #ffffff">
-                    Somos la empresa más eficiente de la zona noreste de Estados Unidos. Nuestra experiencia nos avala a través de los años. Nuestra honestidad habla muy bien de nosotros.
+                    Somos la empresa más eficiente de la zona noreste de Estados Unidos. Nuestra experiencia nos avala a lo largo de los años. Nuestra honestidad habla muy bien de nosotros.
                   </div>
                   <a
                     class="button primary lg mt-4"
@@ -656,10 +634,10 @@
                       font-weight: 400;
                     "
                   >
-                    Precios Razonables
+                    Precios Accesibles
                   </p>
                   <div class="rich-text-block" style="color: #ffffff">
-                    La lucha constante contra la inflación y los elevados gastos de envío siempre ha sido nuestra prioridad.
+                    La lucha constante contra la inflación y los elevados gastos de envío ha sido siempre nuestra prioridad.
                   </div>
                   <a
                     class="button primary lg mt-4"
@@ -763,7 +741,7 @@
                     Transporte marítimo
                   </p>
                   <div class="rich-text-block" style="color: #ffffff">
-                    Nuestra logística profesional nos permite ser la empresa eficiente de la zona.
+                    Nuestra logística profesional nos permite ser la empresa más eficiente de la zona.
                   </div>
                   <a
                     class="button primary lg mt-4"
@@ -1631,6 +1609,7 @@
                         loading="lazy" /></noscript
                   ></span>
                 </div>
+
                 <div class="relative overflow-hidden aspect-w-16 aspect-h-9">
                   <span
                     style="
@@ -1701,6 +1680,216 @@
                         loading="lazy" /></noscript
                   ></span>
                 </div>
+                <div class="relative overflow-hidden aspect-w-16 aspect-h-9">
+                  <span
+                    style="
+                      box-sizing: border-box;
+                      display: block;
+                      overflow: hidden;
+                      width: initial;
+                      height: initial;
+                      background: none;
+                      opacity: 1;
+                      border: 0;
+                      margin: 0;
+                      padding: 0;
+                      position: absolute;
+                      top: 0;
+                      left: 0;
+                      bottom: 0;
+                      right: 0;
+                    "
+                    ><img
+                      src="https://i.imgur.com/jnCZO6l.jpg"
+                      decoding="async"
+                      data-nimg="fill"
+                      class="w-full h-full object-center object-cover rounded-2xl md:rounded-3xl lg:rounded-4xl"
+                      style="
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        bottom: 0;
+                        right: 0;
+                        box-sizing: border-box;
+                        padding: 0;
+                        border: none;
+                        margin: auto;
+                        display: block;
+                        width: 0;
+                        height: 0;
+                        min-width: 100%;
+                        max-width: 100%;
+                        min-height: 100%;
+                        max-height: 100%;
+                        object-fit: cover;
+                      " /><noscript
+                      ><img
+                        src="https://i.imgur.com/Ub0Ltm4.png"
+                        decoding="async"
+                        data-nimg="fill"
+                        style="
+                          position: absolute;
+                          top: 0;
+                          left: 0;
+                          bottom: 0;
+                          right: 0;
+                          box-sizing: border-box;
+                          padding: 0;
+                          border: none;
+                          margin: auto;
+                          display: block;
+                          width: 0;
+                          height: 0;
+                          min-width: 100%;
+                          max-width: 100%;
+                          min-height: 100%;
+                          max-height: 100%;
+                          object-fit: cover;
+                        "
+                        class="w-full h-full object-center object-cover rounded-2xl md:rounded-3xl lg:rounded-4xl"
+                        loading="lazy" /></noscript
+                  ></span>
+                </div>
+                <div class="relative overflow-hidden aspect-w-16 aspect-h-9">
+                  <span
+                    style="
+                      box-sizing: border-box;
+                      display: block;
+                      overflow: hidden;
+                      width: initial;
+                      height: initial;
+                      background: none;
+                      opacity: 1;
+                      border: 0;
+                      margin: 0;
+                      padding: 0;
+                      position: absolute;
+                      top: 0;
+                      left: 0;
+                      bottom: 0;
+                      right: 0;
+                    "
+                    ><img
+                      src="https://i.imgur.com/rxT0eNv.jpg"
+                      decoding="async"
+                      data-nimg="fill"
+                      class="w-full h-full object-center object-cover rounded-2xl md:rounded-3xl lg:rounded-4xl"
+                      style="
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        bottom: 0;
+                        right: 0;
+                        box-sizing: border-box;
+                        padding: 0;
+                        border: none;
+                        margin: auto;
+                        display: block;
+                        width: 0;
+                        height: 0;
+                        min-width: 100%;
+                        max-width: 100%;
+                        min-height: 100%;
+                        max-height: 100%;
+                        object-fit: cover;
+                      " /><noscript
+                      ><img
+                        src="https://i.imgur.com/Ub0Ltm4.png"
+                        decoding="async"
+                        data-nimg="fill"
+                        style="
+                          position: absolute;
+                          top: 0;
+                          left: 0;
+                          bottom: 0;
+                          right: 0;
+                          box-sizing: border-box;
+                          padding: 0;
+                          border: none;
+                          margin: auto;
+                          display: block;
+                          width: 0;
+                          height: 0;
+                          min-width: 100%;
+                          max-width: 100%;
+                          min-height: 100%;
+                          max-height: 100%;
+                          object-fit: cover;
+                        "
+                        class="w-full h-full object-center object-cover rounded-2xl md:rounded-3xl lg:rounded-4xl"
+                        loading="lazy" /></noscript
+                  ></span>
+                </div>
+                <div class="relative overflow-hidden aspect-w-16 aspect-h-9">
+                  <span
+                    style="
+                      box-sizing: border-box;
+                      display: block;
+                      overflow: hidden;
+                      width: initial;
+                      height: initial;
+                      background: none;
+                      opacity: 1;
+                      border: 0;
+                      margin: 0;
+                      padding: 0;
+                      position: absolute;
+                      top: 0;
+                      left: 0;
+                      bottom: 0;
+                      right: 0;
+                    "
+                    ><img
+                      src="https://i.imgur.com/6rVdvTh.jpg"
+                      decoding="async"
+                      data-nimg="fill"
+                      class="w-full h-full object-center object-cover rounded-2xl md:rounded-3xl lg:rounded-4xl"
+                      style="
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        bottom: 0;
+                        right: 0;
+                        box-sizing: border-box;
+                        padding: 0;
+                        border: none;
+                        margin: auto;
+                        display: block;
+                        width: 0;
+                        height: 0;
+                        min-width: 100%;
+                        max-width: 100%;
+                        min-height: 100%;
+                        max-height: 100%;
+                        object-fit: cover;
+                      " /><noscript
+                      ><img
+                        src="https://i.imgur.com/Ub0Ltm4.png"
+                        decoding="async"
+                        data-nimg="fill"
+                        style="
+                          position: absolute;
+                          top: 0;
+                          left: 0;
+                          bottom: 0;
+                          right: 0;
+                          box-sizing: border-box;
+                          padding: 0;
+                          border: none;
+                          margin: auto;
+                          display: block;
+                          width: 0;
+                          height: 0;
+                          min-width: 100%;
+                          max-width: 100%;
+                          min-height: 100%;
+                          max-height: 100%;
+                          object-fit: cover;
+                        "
+                        class="w-full h-full object-center object-cover rounded-2xl md:rounded-3xl lg:rounded-4xl"
+                        loading="lazy" /></noscript
+                  ></span>
+                </div>
               </div>
             </div>
           </div>
@@ -1708,7 +1897,7 @@
         <section
           id="location-6"
           class="relative flex z-10"
-          style="background-color: #333333; min-height: "
+          style="background-color: #333333; min-height: auto"
         >
           <div
             class="container mx-auto flex-grow relative z-10 pt-12 lg:pt-14 xl:pt-20 pb-12 lg:pb-14 xl:pb-20"
@@ -1761,7 +1950,7 @@
                 <div class="rich-text-block" style="color: #ffffff">
                   <h3>Contáctenos Ahora</h3>
                   <p>
-                    Conéctese con nosotros a través de nuestro formulario de contacto y permítanos ayudarle con sus necesidades de exportación de coches. Estamos aquí para responder a cualquier pregunta que pueda tener y proporcionarle el mejor servicio posible. <br />302-322-9001
+                    Conéctese con nosotros a través de nuestro formulario de contacto y permítanos ayudarle con sus necesidades de exportación de coches. Estamos aquí para responder a cualquier pregunta que pueda tener y ofrecerle el mejor servicio posible. <br />302-322-9001
                     <br />geotransport2009@yahoo.com
                   </p>
                 </div>
@@ -2029,7 +2218,7 @@
                       }
                     },
                     {
-                      "title": "Customs Clearance",
+                      "title": "Affordable Prices",
                       "content": "We handle all the bureaucratic procedures for you. Our customs clearance service ensures that your car is delivered safely to your doorstep, without any hassle.",
                       "idx": 1,
                       "button": {
@@ -2405,17 +2594,6 @@
         "scriptLoader": []
       }
     </script>
-    <script>
-      // Get a reference to the button element
-      const button = document.getElementById("scrollToTopButton");
-
-      // Add a click event listener to scroll to the top of the page when clicked
-      button.addEventListener("click", () => {
-        window.scrollTo({
-          top: 0,
-          behavior: "smooth",
-        });
-      });
-    </script>
+    <script src="./scrolling.js"></script>
   </body>
 </html>
