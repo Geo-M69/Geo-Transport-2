@@ -13,19 +13,19 @@ function smoothScroll(target) {
   function animationStep(timestamp) {
     if (!start) start = timestamp;
     const progress = timestamp - start;
-    window.scrollTo(0, easeInOutCubic(progress, startPosition, distance, duration));
+    const percentage = Math.min(progress / duration, 1);
+
+    window.scrollTo(0, startPosition + distance * Math.easeInOutCubic(percentage));
+
     if (progress < duration) {
       requestAnimationFrame(animationStep);
     }
   }
 
-  // Easing function for smooth scrolling
-  function easeInOutCubic(t, b, c, d) {
-    t /= d / 2;
-    if (t < 1) return (c / 2) * t * t * t + b;
-    t -= 2;
-    return (c / 2) * (t * t * t + 2) + b;
-  }
+  // Easing function for smooth scrolling (easeInOutCubic)
+  Math.easeInOutCubic = function (t) {
+    return t < 0.5 ? 4 * t * t * t : (t - 1) * (2 * t - 2) * (2 * t - 2) + 1;
+  };
 
   // Start the animation
   requestAnimationFrame(animationStep);
