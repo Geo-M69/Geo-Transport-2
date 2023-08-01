@@ -460,7 +460,7 @@ select {
 }
 @media (min-width: 640px) {
   .heading-small {
-    max-width: 30% !important;
+    max-width: 70% !important;
   }
   .grid {
     height: 70%;
