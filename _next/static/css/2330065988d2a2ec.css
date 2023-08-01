@@ -462,10 +462,24 @@ select {
   .container {
     max-width: 640px;
   }
+  .heading-small {
+    max-width: 30% !important;
+  }
+  .grid {
+    height: 70%;
+    width: 100%;
+  }
 }
 @media (min-width: 768px) {
   .container {
     max-width: 768px;
+  }
+  .heading-small {
+    max-width: 30% !important;
+  }
+  .grid {
+    height: 70%;
+    width: 100%;
   }
 }
 @media (min-width: 1024px) {
