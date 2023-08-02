@@ -3591,13 +3591,13 @@ button.date-input {
     line-height: 56px;
     margin-bottom: 1.5rem;
   }
+  .embarque {
+    font-size: 55px;
+  }
   .rich-text-block h3 {
     font-size: 32px;
     line-height: 40px;
     margin-bottom: 1rem;
-  }
-  .embarque {
-    font-size: 55px;
   }
   .rich-text-block blockquote,
   .rich-text-block blockquote p {
