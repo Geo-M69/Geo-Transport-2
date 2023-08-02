@@ -502,10 +502,16 @@ select {
   .container {
     max-width: 1536px;
   }
+  .embarque {
+    font-size: 50px;
+  }
 }
 @media (min-width: 1920px) {
   .container {
     max-width: 1920px;
+  }
+  .embarque {
+    font-size: 60px;
   }
 }
 .aspect-w-1,
@@ -4250,4 +4256,8 @@ button.date-input {
   height: 100%;
   opacity: 0.4;
   transform: rotate(3deg) translateY(-4px);
+}
+
+.embarque {
+  font-size: 60px;
 }
