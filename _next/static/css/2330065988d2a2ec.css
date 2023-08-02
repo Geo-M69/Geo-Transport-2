@@ -466,6 +466,9 @@ select {
     height: 70%;
     width: 100%;
   }
+  .embarque {
+    font-size: 45px;
+  }
 }
 @media (min-width: 768px) {
   .container {
@@ -477,6 +480,9 @@ select {
   .grid {
     height: 70%;
     width: 100%;
+  }
+  .embarque {
+    font-size: 45px;
   }
 }
 @media (min-width: 1024px) {
