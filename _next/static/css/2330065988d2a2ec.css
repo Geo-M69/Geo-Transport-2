@@ -462,12 +462,6 @@ select {
   font-size: 60px;
 }
 
-@media (min-width: 960px) {
-  .relative-1 {
-    display: block;
-  }
-}
-
 @media (min-width: 640px) {
   .heading-small {
     max-width: 70% !important;
@@ -501,6 +495,23 @@ select {
     display: none;
   }
 }
+
+@media (min-width: 640px) {
+  .heading-small {
+    max-width: 70% !important;
+  }
+  .grid {
+    height: 70%;
+    width: 100%;
+  }
+  .embarque {
+    font-size: 45px;
+  }
+  .relative-1 {
+    display: none;
+  }
+}
+
 @media (min-width: 1024px) {
   .container {
     max-width: 1024px;
