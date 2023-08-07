@@ -461,6 +461,13 @@ select {
 .embarque {
   font-size: 60px;
 }
+
+@media (max-width: 960px) {
+  .relative-1 {
+    display: block;
+  }
+}
+
 @media (min-width: 640px) {
   .heading-small {
     max-width: 70% !important;
