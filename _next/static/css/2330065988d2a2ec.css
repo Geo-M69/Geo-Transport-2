@@ -473,6 +473,9 @@ select {
   .embarque {
     font-size: 45px;
   }
+  .relative-1 {
+    display: none;
+  }
 }
 @media (min-width: 768px) {
   .container {
@@ -487,6 +490,9 @@ select {
   }
   .embarque {
     font-size: 45px;
+  }
+  .relative-1 {
+    display: none;
   }
 }
 
