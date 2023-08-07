@@ -496,9 +496,12 @@ select {
   }
 }
 
-@media (min-width: 640px) {
+@media (min-width: 960px) {
+  .container {
+    max-width: 768px;
+  }
   .heading-small {
-    max-width: 70% !important;
+    max-width: 12% !important;
   }
   .grid {
     height: 70%;
@@ -508,7 +511,7 @@ select {
     font-size: 45px;
   }
   .relative-1 {
-    display: none;
+    display: block;
   }
 }
 
