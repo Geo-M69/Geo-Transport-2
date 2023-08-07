@@ -496,9 +496,9 @@ select {
   }
 }
 
-@media (min-width: 960px) {
+@media (min-width: 770px) {
   .container {
-    max-width: 768px;
+    max-width: 770px;
   }
   .heading-small {
     max-width: 12% !important;
