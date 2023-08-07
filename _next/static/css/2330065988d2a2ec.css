@@ -504,7 +504,8 @@ select {
     justify-content: center;
   }
   .image-promotion img {
-    max-width: 100% !important;
+    max-width: 34% !important;
+    justify-content: baseline;
   }
 }
 
