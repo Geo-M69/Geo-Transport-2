@@ -501,11 +501,10 @@ select {
     display: none;
   }
   .image-promotion {
-    justify-content: center;
+    justify-content: baseline;
   }
   .image-promotion img {
     max-width: 34% !important;
-    justify-content: baseline;
   }
 }
 
