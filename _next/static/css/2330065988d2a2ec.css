@@ -476,6 +476,12 @@ select {
   .relative-1 {
     display: none;
   }
+  .image-promotion {
+    justify-content: center;
+  }
+  .image-promotion img {
+    max-width: 100% !important;
+  }
 }
 @media (min-width: 768px) {
   .container {
@@ -493,6 +499,12 @@ select {
   }
   .relative-1 {
     display: none;
+  }
+  .image-promotion {
+    justify-content: center;
+  }
+  .image-promotion img {
+    max-width: 100% !important;
   }
 }
 
