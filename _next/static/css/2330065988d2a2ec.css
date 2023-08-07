@@ -474,7 +474,7 @@ select {
     font-size: 45px;
   }
   .relative-1 {
-    display: none;
+    display: none !important;
   }
 }
 @media (min-width: 768px) {
