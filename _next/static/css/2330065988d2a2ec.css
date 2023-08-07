@@ -473,8 +473,8 @@ select {
   .embarque {
     font-size: 45px;
   }
-  .relative-1 overflow-hidden aspect-w-16 aspect-h-9 {
-    display: none !important;
+  .relative-1 {
+    display: none;
   }
 }
 @media (min-width: 768px) {
